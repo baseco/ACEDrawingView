@@ -17,6 +17,8 @@ let package = Package(
         .target(
             name: "ACEDrawingView",
             path: "ACEDrawingView",
-            resources: [.process("ACEDraggableText")]),
+            resources: [.process("ACEDraggableText")],
+	publicHeadersPath: "include",
+	cSettings:[.headersSearchPath("include/ACEDrawingView")]),
     ]
 )
